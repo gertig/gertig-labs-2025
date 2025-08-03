@@ -1,0 +1,185 @@
+.GertigMain {
+  display: flex;
+  flex-direction: column;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  /* outline: 1px solid rgb(42, 71, 116); */
+}
+
+.HeroImage {
+  background-image: url("/gertig/Sketch_by_MShields-2.jpg");
+  background-position: 30%;
+  /* background-position: center center; */
+  background-position: center top;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+  /* outline: 1px solid magenta; */
+  width: 100%;
+}
+
+.Main {
+  padding: 7%;
+  position: relative;
+  /* outline: 1px solid rgb(62, 148, 51); */
+}
+
+/* @media (max-width: 768px) {
+  aside {
+    background-position: center center;
+  }
+} */
+
+@media (min-width: 576px) {
+  .GertigMain {
+    max-width: 1200px;
+    flex-direction: row-reverse;
+    margin: auto;
+  }
+
+  .Main {
+    width: 50%;
+  }
+
+  .HeroImage {
+    height: 100vh;
+    /* background-position: center top; */
+    /* background-position: center center; */
+    width: 50%;
+  }
+}
+
+.HomeTitle {
+  -webkit-text-size-adjust: 100%;
+  box-sizing: inherit;
+  margin: 0.67em 0;
+  font-weight: 300;
+  letter-spacing: -0.1rem;
+  margin-top: 0;
+  font-size: 4.6rem;
+  line-height: 1.2;
+  color: #000;
+  font-family: Playfair Display, times, serif;
+  margin-bottom: 0;
+}
+
+.HomeDescription {
+  margin-bottom: 5px;
+}
+
+.HomeLead {
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: 0.01em;
+  font-family: Open Sans, Arial, sans-serif;
+  line-height: 1.8;
+  color: #6a6b77;
+  box-sizing: inherit;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+.HomeBody {
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: 0.01em;
+  font-family: Open Sans, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #6a6b77;
+  box-sizing: inherit;
+  margin-bottom: 2.5rem;
+  margin-top: 0;
+}
+
+.HomeLinks {
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: 0.01em;
+  font-family: Open Sans, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #6a6b77;
+  box-sizing: inherit;
+  margin-bottom: 2.5rem;
+  margin-top: 0;
+}
+
+.HomeLinks a {
+  -webkit-text-size-adjust: 100%;
+  letter-spacing: 0.01em;
+  font-family: Open Sans, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  box-sizing: inherit;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: #940e83;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+}
+
+.HomeButton {
+  top: 20px;
+  color: #940e83; /* #F73859; */
+  font-size: 20px;
+  position: absolute;
+}
+
+main.Main input[type="email"],
+main.Main input[type="number"],
+main.Main input[type="password"],
+main.Main input[type="search"],
+main.Main input[type="tel"],
+main.Main input[type="text"],
+main.Main input[type="url"],
+main.Main input[type="color"],
+main.Main input[type="date"],
+main.Main input[type="month"],
+main.Main input[type="week"],
+main.Main input[type="datetime"],
+main.Main input[type="datetime-local"],
+main.Main input:not([type]),
+main.Main textarea,
+main.Main select {
+  appearance: none;
+  background-color: transparent;
+  border: 0.1rem solid #d1d1d1;
+  border-radius: 0.4rem;
+  box-shadow: none;
+  box-sizing: inherit;
+  height: 3.8rem;
+  padding: 0.6rem 1rem;
+  width: 100%;
+}
+
+main.Main input[type="email"]:focus,
+main.Main input[type="number"]:focus,
+main.Main input[type="password"]:focus,
+main.Main input[type="search"]:focus,
+main.Main input[type="tel"]:focus,
+main.Main input[type="text"]:focus,
+main.Main input[type="url"]:focus,
+main.Main input[type="color"]:focus,
+main.Main input[type="date"]:focus,
+main.Main input[type="month"]:focus,
+main.Main input[type="week"]:focus,
+main.Main input[type="datetime"]:focus,
+main.Main input[type="datetime-local"]:focus,
+main.Main input:not([type]):focus,
+main.Main textarea:focus,
+main.Main select:focus {
+  border-color: #9b4dca;
+  outline: 0;
+}
+
+main.Main fieldset,
+main.Main input,
+main.Main select,
+main.Main textarea {
+  margin-bottom: 1.5rem;
+}
