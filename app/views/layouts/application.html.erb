@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title inertia><%= content_for(:title) || "Gertig Labs 2025" %></title>
+  <title inertia><%= content_for(:title) || "Andrew Gertig" %></title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
@@ -17,10 +17,12 @@
 
   <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
   <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+  <link rel="manifest" href="/site.webmanifest">
 
-  <link rel="icon" href="/icon.png" type="image/png">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/icon.png">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
 
   <%# External stylesheets %>
   <link href="https://fonts.googleapis.com/css?display=optional&family=Open+Sans:300,400,700,800|Playfair+Display:,300, 400, 700" rel="stylesheet" />
