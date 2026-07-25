@@ -10,7 +10,7 @@ class NostrTest < ActionDispatch::IntegrationTest
     assert_equal(
       {
         "names" => {
-          "andrew" => "1607d0775adc093c93379e3e2b6be84bc334d043b1eec9a7fb4e26876d54d323"
+          "gertig" => "1607d0775adc093c93379e3e2b6be84bc334d043b1eec9a7fb4e26876d54d323"
         },
         "relays" => {
           "1607d0775adc093c93379e3e2b6be84bc334d043b1eec9a7fb4e26876d54d323" => [
