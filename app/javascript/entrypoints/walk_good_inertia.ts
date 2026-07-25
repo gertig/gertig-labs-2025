@@ -2,9 +2,6 @@ import { createInertiaApp } from "@inertiajs/react";
 import { createElement, ReactNode } from "react";
 import { createRoot } from "react-dom/client";
 
-// Import our main styles
-import "../walk_good/styles/main.css";
-
 // Temporary type definition, until @inertiajs/react provides one
 type ResolvedComponent = {
   default: ReactNode;

@@ -1,0 +1,20 @@
+// vite.config.ts
+import react from "file:///Users/andrewgertig/Documents/Dev/gertig-labs-2025/node_modules/@vitejs/plugin-react/dist/index.js";
+import tailwindcss from "file:///Users/andrewgertig/Documents/Dev/gertig-labs-2025/node_modules/@tailwindcss/vite/dist/index.mjs";
+import { defineConfig } from "file:///Users/andrewgertig/Documents/Dev/gertig-labs-2025/node_modules/vite/dist/node/index.js";
+import RubyPlugin from "file:///Users/andrewgertig/Documents/Dev/gertig-labs-2025/node_modules/vite-plugin-ruby/dist/index.js";
+import path from "path";
+var __vite_injected_original_dirname = "/Users/andrewgertig/Documents/Dev/gertig-labs-2025";
+var vite_config_default = defineConfig({
+  resolve: {
+    alias: {
+      "@gertig": path.resolve(__vite_injected_original_dirname, "./app/javascript/gertig"),
+      "@walk_good": path.resolve(__vite_injected_original_dirname, "./app/javascript/walk_good")
+    }
+  },
+  plugins: [react(), tailwindcss(), RubyPlugin()]
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcudHMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCIvVXNlcnMvYW5kcmV3Z2VydGlnL0RvY3VtZW50cy9EZXYvZ2VydGlnLWxhYnMtMjAyNVwiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9maWxlbmFtZSA9IFwiL1VzZXJzL2FuZHJld2dlcnRpZy9Eb2N1bWVudHMvRGV2L2dlcnRpZy1sYWJzLTIwMjUvdml0ZS5jb25maWcudHNcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfaW1wb3J0X21ldGFfdXJsID0gXCJmaWxlOi8vL1VzZXJzL2FuZHJld2dlcnRpZy9Eb2N1bWVudHMvRGV2L2dlcnRpZy1sYWJzLTIwMjUvdml0ZS5jb25maWcudHNcIjtpbXBvcnQgcmVhY3QgZnJvbSBcIkB2aXRlanMvcGx1Z2luLXJlYWN0XCI7XG5pbXBvcnQgdGFpbHdpbmRjc3MgZnJvbSBcIkB0YWlsd2luZGNzcy92aXRlXCI7XG5pbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tIFwidml0ZVwiO1xuaW1wb3J0IFJ1YnlQbHVnaW4gZnJvbSBcInZpdGUtcGx1Z2luLXJ1YnlcIjtcbmltcG9ydCBwYXRoIGZyb20gXCJwYXRoXCI7XG5cbmV4cG9ydCBkZWZhdWx0IGRlZmluZUNvbmZpZyh7XG4gIHJlc29sdmU6IHtcbiAgICBhbGlhczoge1xuICAgICAgXCJAZ2VydGlnXCI6IHBhdGgucmVzb2x2ZShfX2Rpcm5hbWUsIFwiLi9hcHAvamF2YXNjcmlwdC9nZXJ0aWdcIiksXG4gICAgICBcIkB3YWxrX2dvb2RcIjogcGF0aC5yZXNvbHZlKF9fZGlybmFtZSwgXCIuL2FwcC9qYXZhc2NyaXB0L3dhbGtfZ29vZFwiKSxcbiAgICB9LFxuICB9LFxuICBwbHVnaW5zOiBbcmVhY3QoKSwgdGFpbHdpbmRjc3MoKSwgUnVieVBsdWdpbigpXSxcbn0pO1xuIl0sCiAgIm1hcHBpbmdzIjogIjtBQUF3VSxPQUFPLFdBQVc7QUFDMVYsT0FBTyxpQkFBaUI7QUFDeEIsU0FBUyxvQkFBb0I7QUFDN0IsT0FBTyxnQkFBZ0I7QUFDdkIsT0FBTyxVQUFVO0FBSmpCLElBQU0sbUNBQW1DO0FBTXpDLElBQU8sc0JBQVEsYUFBYTtBQUFBLEVBQzFCLFNBQVM7QUFBQSxJQUNQLE9BQU87QUFBQSxNQUNMLFdBQVcsS0FBSyxRQUFRLGtDQUFXLHlCQUF5QjtBQUFBLE1BQzVELGNBQWMsS0FBSyxRQUFRLGtDQUFXLDRCQUE0QjtBQUFBLElBQ3BFO0FBQUEsRUFDRjtBQUFBLEVBQ0EsU0FBUyxDQUFDLE1BQU0sR0FBRyxZQUFZLEdBQUcsV0FBVyxDQUFDO0FBQ2hELENBQUM7IiwKICAibmFtZXMiOiBbXQp9Cg==

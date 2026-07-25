@@ -3,9 +3,8 @@ Walk Good Travel - Main Styles
 Based on Turmet Theme - Adapted for Rails/Inertia App with Tailwind CSS
 */
 
-@import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+/* Tailwind is loaded via entrypoints/walk_good_application.css.
+   Fonts are loaded via <link> tags in the Walk Good layout. */
 
 /* Theme Custom Properties */
 :root {

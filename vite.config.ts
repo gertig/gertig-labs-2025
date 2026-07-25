@@ -11,5 +11,12 @@ export default defineConfig({
       "@walk_good": path.resolve(__dirname, "./app/javascript/walk_good"),
     },
   },
-  plugins: [react(), tailwindcss(), RubyPlugin()],
+  plugins: [react(), RubyPlugin()],
+  // TEMP: tailwindcss() disabled to diagnose hang — re-enable after verify
+  // plugins: [react(), tailwindcss(), RubyPlugin()],
+  server: {
+    watch: {
+      ignored: ["**/theme-files/**", "**/*.css.reference", "**/tmp/**", "**/log/**"],
+    },
+  },
 });
