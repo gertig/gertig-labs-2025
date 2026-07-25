@@ -13,15 +13,7 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-
-  constraints WalkGoodDomainConstraints do
-    scope module: :walk_good do
-      root to: "pages#index", as: nil
-    end
-  end
-
   scope module: :gertig do
     root to: 'pages#index', as: nil
   end
-
 end
