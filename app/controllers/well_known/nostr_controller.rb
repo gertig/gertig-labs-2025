@@ -12,7 +12,7 @@ module WellKnown
 
       render json: {
         names: {
-          andrew: PUBLIC_KEY
+          gertig: PUBLIC_KEY
         },
         relays: {
           PUBLIC_KEY => RELAYS
