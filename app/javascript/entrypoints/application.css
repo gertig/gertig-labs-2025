@@ -1,4 +1,2 @@
-@import "tailwindcss";
-
-@plugin "@tailwindcss/typography";
-@plugin "@tailwindcss/forms";
+/* Intentionally empty — Gertig styles live in CSS modules.
+   Tailwind Vite plugin is disabled in vite.config.ts because oxide hangs locally. */

@@ -1,5 +1,4 @@
 import react from "@vitejs/plugin-react";
-import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 import RubyPlugin from "vite-plugin-ruby";
 import path from "path";
@@ -10,5 +9,10 @@ export default defineConfig({
       "@gertig": path.resolve(__dirname, "./app/javascript/gertig"),
     },
   },
-  plugins: [react(), tailwindcss(), RubyPlugin()],
+  // Tailwind v4 oxide hangs the Vite dev server on this machine.
+  // Gertig pages use CSS modules; re-enable @tailwindcss/vite when that's fixed.
+  plugins: [react(), RubyPlugin()],
+  server: {
+    host: "127.0.0.1",
+  },
 });
