@@ -2,6 +2,9 @@ import { createInertiaApp } from "@inertiajs/react";
 import { createElement, ReactNode } from "react";
 import { createRoot } from "react-dom/client";
 
+// Import our main styles
+import "../walk_good/styles/main.css";
+
 // Temporary type definition, until @inertiajs/react provides one
 type ResolvedComponent = {
   default: ReactNode;
@@ -11,13 +14,15 @@ type ResolvedComponent = {
 createInertiaApp({
   // Set default page title
   // see https://inertia-rails.dev/guide/title-and-meta
-  //
-  // title: title => title ? `${title} - App` : 'App',
+  title: (title) =>
+    title ? `${title} - Walk Good Travel` : "Walk Good Travel",
 
   // Disable progress bar
   //
   // see https://inertia-rails.dev/guide/progress-indicators
-  // progress: false,
+  progress: {
+    color: "#1CA8CB",
+  },
 
   resolve: (name) => {
     const pages = import.meta.glob<ResolvedComponent>(

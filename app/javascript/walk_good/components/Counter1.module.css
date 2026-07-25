@@ -1,0 +1,7 @@
+/* Counter1 component styles */
+.counterSection {
+  background-color: var(--theme);
+  color: white;
+}
+
+/* Additional counter-specific styles can be added here */
