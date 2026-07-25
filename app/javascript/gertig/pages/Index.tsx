@@ -24,11 +24,11 @@ export default function Index() {
 
           <p className={styles.HomeLinks}>
             <a
-              href="https://twitter.com/gertig"
+              href="https://x.com/gertig"
               target="_blank"
               rel="noreferrer"
             >
-              Twitter
+              X
             </a>
             <a
               href="https://github.com/gertig/"
@@ -43,9 +43,6 @@ export default function Index() {
               rel="noreferrer"
             >
               LinkedIn
-            </a>
-            <a href="https://polymer.co" target="_blank" rel="noreferrer">
-              Polymer
             </a>
           </p>
         </main>
